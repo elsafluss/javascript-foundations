@@ -10,7 +10,7 @@ describe('TrickOrTreater', function () {
     assert.isFunction(TrickOrTreater);
   });
 
-  it.skip('should wear a costume', function () {
+  it('should wear a costume', function () {
 
     var costume = new Costume('Cowboy');
     var trickOrTreater = new TrickOrTreater(costume);
@@ -18,13 +18,13 @@ describe('TrickOrTreater', function () {
   });
 
 
-  it.skip('should wear a different costume', function () {
+  it('should wear a different costume', function () {
     var costume = new Costume('Cowboy');
     var trickOrTreater = new TrickOrTreater(costume);
     assert.equal(trickOrTreater.dressedUpAs, 'Cowboy');
   });
 
-  it.skip('should have an empty bag by default', function () {
+  it('should have an empty bag by default', function () {
     var costume = new Costume('Alien');
     var bag = new Bag();
     var trickOrTreater = new TrickOrTreater(costume, bag);
